@@ -10,7 +10,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import store from "./store"
 
 Vue.use(ElementUI)
-Vue.prototype.HOST = '/api/user/add'
+Vue.prototype.HOST = '/api/users/add'
 Vue.prototype.$axios = Axios
 Axios.defaults.baseURL = 'http://localhost:5000'//'http://www.wwtliu.com';
 Axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-unlencoded';
