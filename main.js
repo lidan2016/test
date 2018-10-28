@@ -12,7 +12,7 @@ import store from "./store"
 Vue.use(ElementUI)
 Vue.prototype.HOST = '/api'
 Vue.prototype.$axios = Axios
-//Axios.defaults.baseURL = 'http://localhost:3000'//'http://www.wwtliu.com';
+Axios.defaults.baseURL = 'http://localhost:3000'//'http://www.wwtliu.com';
 //Axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-unlencoded';
 Axios.interceptors.request.use(function(config){
 	if(config.method == "post") {
